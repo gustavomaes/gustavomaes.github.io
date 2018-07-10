@@ -1,0 +1,9 @@
+.header {
+    width: 100%;
+    height: 48rem;
+    justify-content: flex-start;
+    
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark)), url(../img/background.jpg);
+}

@@ -1,0 +1,25 @@
+.list {
+    list-style: none;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--color-gray-dark-2);
+
+    &__item {
+        font-size: 1.8rem;
+        flex: 0 0 40%;
+        
+        margin-bottom: .7rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            border: .2rem solid var(--color-primary);
+            border-radius: 50%;
+            height: 1.3rem;
+            width: 1.3rem;
+            margin-right: .7rem;            
+        }
+    }
+}

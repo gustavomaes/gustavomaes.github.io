@@ -1,0 +1,25 @@
+.block {
+    color: var(--color-gray-dark-2);
+    border-left: .2rem solid var(--color-primary);
+    padding-left: 2.7rem;
+    position: relative;
+    margin-bottom: 2rem;
+
+    &__title {
+        color: var(--color-primary);
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__date {
+
+        color: var(--color-gray-dark-3);
+        font-size: 1.2rem;
+    }
+
+    &__description {
+        padding-top: 1rem;
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,60 @@
+.profile-box {
+    display: flex;
+    margin: 0 30% 0 20%;
+    margin-bottom:-3.5rem;
+    font-family: "Roboto Mono";
+
+    &__img {
+        border-radius: .5rem;
+        box-shadow: var(--shadow-light);
+        max-height: 38rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;
+    }
+
+    &__name {
+        letter-spacing: .2rem;
+        padding: 0;
+        font-size: 4.4rem;
+        font-weight: 500;
+        line-height: 3.2rem;
+    }
+
+    &__subtitle {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        padding-top: 1.8rem;
+        padding-bottom: 4rem;
+    }
+
+    &__contact {
+        display: flex;
+        margin:0;
+        padding:0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        &--dd {
+            text-transform: uppercase;
+            width: 33%;
+            color: var(--color-gray-light-1);
+            opacity: .6;
+
+            font-weight: 700;
+        }
+
+        &--dt {
+            margin-left: auto;
+            width: 66%;
+        }
+    }
+}

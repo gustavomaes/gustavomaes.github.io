@@ -1,17 +1,24 @@
-/*
-COLORS
+//Abstract
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
+//Base
+@import "base/base";
+@import "base/animations";
+@import "base/utilities";
+@import "base/typography";
 
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
+//Components
+@import "components/content";
+@import "components/icon-box";
+@import "components/profile-box";
+@import "components/block";
+@import "components/list";
 
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
+//Layout
+@import "layout/container";
+@import "layout/header";
 
-*/
+//Pages
+@import "pages/home";

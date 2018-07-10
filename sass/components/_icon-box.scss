@@ -1,0 +1,14 @@
+.icon-box {
+    display: flex;
+    margin-top: .5rem;
+
+    &__icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: var(--color-gray-light-1);
+        opacity: .6;
+
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+}
