@@ -9,8 +9,9 @@
   --color-gray-light-3: #f0eeee;
   --color-gray-light-4: #ccc;
   --color-gray-dark-1: #333;
-  --color-gray-dark-2: #777;
-  --color-gray-dark-3: #999;
+  --color-gray-dark-2: #666;
+  --color-gray-dark-3: #777;
+  --color-gray-dark-4: #999;
   --color-white: #fff;
   --color-black: #000;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
@@ -37,26 +38,27 @@ body {
   font-family: "Roboto Mono"; }
   .title--medium {
     font-size: 3.6rem;
+    letter-spacing: 0.5rem;
     font-weight: 400;
-    color: var(--color-gray-dark-1);
+    color: var(--color-gray-dark-2);
     margin-bottom: 2rem; }
   .title--small {
     text-transform: uppercase;
     letter-spacing: .5rem;
     font-size: 1.3rem;
     font-weight: 700;
-    color: var(--color-gray-dark-3);
+    color: var(--color-gray-dark-4);
     margin-top: 5rem;
     margin-bottom: 2rem; }
 
 .paragraph {
   font-size: 1.8rem;
-  color: var(--color-gray-dark-2);
+  color: var(--color-gray-dark-3);
   line-height: 3rem;
   margin-bottom: 3rem; }
 
 .content {
-  margin: 0 30% 0 20%; }
+  margin: 0 20% 0 20%; }
 
 .icon-box {
   display: flex;
@@ -148,6 +150,66 @@ body {
       width: 1.3rem;
       margin-right: .7rem; }
 
+.card {
+  display: flex;
+  border: 0.1rem solid var(--color-gray-light-3);
+  font-family: "Roboto Mono";
+  transition: all .2s; }
+  .card:not(:last-child) {
+    margin-bottom: 5rem; }
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.1); }
+  .card__photo {
+    display: flex; }
+    .card__photo--image {
+      overflow: hidden;
+      width: 46rem;
+      height: 100%;
+      display: block; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem; }
+    .card__content__title {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      color: var(--color-gray-dark-2);
+      padding-bottom: 1.5rem; }
+    .card__content__description {
+      font-family: "Roboto";
+      line-height: 2.4rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--color-gray-dark-3);
+      padding-bottom: 4rem; }
+    .card__content__subtitle {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      color: var(--color-gray-dark-2);
+      margin-bottom: 2rem; }
+    .card__content__stack {
+      font-family: "Roboto";
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--color-gray-dark-3); }
+      .card__content__stack--item {
+        border: 0.1rem solid var(--color-gray-light-1);
+        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.14);
+        padding: 0.8rem;
+        margin-top: 3rem; }
+        .card__content__stack--item:not(:last-child) {
+          margin-right: 1rem; }
+    .card__content__link {
+      text-decoration: none;
+      font-family: "Roboto mono";
+      font-size: 1.4rem;
+      color: var(--color-primary);
+      font-weight: 400;
+      letter-spacing: .2rem;
+      margin-top: auto;
+      margin-left: auto; }
+
 .container {
   display: flex;
   flex-direction: column; }
@@ -162,3 +224,8 @@ body {
 
 .resume {
   padding-top: 9rem; }
+
+.projects {
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column; }
