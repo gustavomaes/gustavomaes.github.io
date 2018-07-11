@@ -6,4 +6,8 @@
     display: flex;
     align-items: flex-end;
     background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark)), url(../img/background.jpg);
+
+    @include respond(bp-large) {
+        height: 40rem;
+    }
 }

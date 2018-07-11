@@ -2,8 +2,12 @@
     display: flex;
     border: .1rem solid var(--color-gray-light-3);
     font-family: "Roboto Mono";
-    // box-shadow: var(--shadow-light);
     transition: all .2s;
+
+    
+    @include respond(bp-large) {
+        flex-direction: column;
+    }
 
     &:not(:last-child) {
         margin-bottom: 5rem;
@@ -24,6 +28,11 @@
             width: 46rem;
             height:100%;
             display: block;
+
+            
+            @include respond(bp-large) {
+                width: 100%;
+            }
         }
     }
 
@@ -57,7 +66,9 @@
         }
 
         &__stack {
-            font-family: "Roboto";
+            display: flex;
+            align-content: center;
+            flex-wrap: wrap;
             font-size: 1.4rem;
             font-weight: 400;
             color: var(--color-gray-dark-3);
@@ -67,9 +78,11 @@
                 box-shadow: 0 .1rem 0.4rem rgba(0, 0, 0, .14);
                 padding: 0.8rem;
                 margin-top: 3rem;
+
+                
                 &:not(:last-child) {
-                    
                     margin-right: 1rem;
+
                 }
             }
         }

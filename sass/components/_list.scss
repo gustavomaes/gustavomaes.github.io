@@ -12,6 +12,10 @@
         
         margin-bottom: .7rem;
 
+        @include respond(bp-large) {
+            flex: 0 0 100%;
+        }
+
         &::before {
             content: "";
             display: inline-block;

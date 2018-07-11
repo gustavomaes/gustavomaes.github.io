@@ -27,6 +27,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 78.125em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 26.875em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -59,6 +65,12 @@ body {
 
 .content {
   margin: 0 20% 0 20%; }
+  @media only screen and (max-width: 37.5em) {
+    .content {
+      margin: 0 10% 0 10%; } }
+  @media only screen and (max-width: 26.875em) {
+    .content {
+      margin: 0 5% 0 5%; } }
 
 .icon-box {
   display: flex;
@@ -76,14 +88,26 @@ body {
   margin: 0 20% 0 20%;
   margin-bottom: -3.5rem;
   font-family: "Roboto Mono"; }
+  @media only screen and (max-width: 37.5em) {
+    .profile-box {
+      margin: 0 10% 0 10%; } }
+  @media only screen and (max-width: 26.875em) {
+    .profile-box {
+      margin: 0 5% 0 5%; } }
   .profile-box__img {
     border-radius: .5rem;
     box-shadow: var(--shadow-light);
     max-height: 38rem; }
+    @media only screen and (max-width: 62.5em) {
+      .profile-box__img {
+        display: none; } }
   .profile-box__details {
     display: flex;
     flex-direction: column;
     margin-left: 7rem; }
+    @media only screen and (max-width: 62.5em) {
+      .profile-box__details {
+        margin-left: 0rem; } }
   .profile-box__name {
     letter-spacing: .2rem;
     padding: 0;
@@ -146,6 +170,9 @@ body {
     font-size: 1.8rem;
     flex: 0 0 40%;
     margin-bottom: .7rem; }
+    @media only screen and (max-width: 62.5em) {
+      .list__item {
+        flex: 0 0 100%; } }
     .list__item::before {
       content: "";
       display: inline-block;
@@ -160,6 +187,9 @@ body {
   border: 0.1rem solid var(--color-gray-light-3);
   font-family: "Roboto Mono";
   transition: all .2s; }
+  @media only screen and (max-width: 62.5em) {
+    .card {
+      flex-direction: column; } }
   .card:not(:last-child) {
     margin-bottom: 5rem; }
   .card:hover {
@@ -172,6 +202,9 @@ body {
       width: 46rem;
       height: 100%;
       display: block; }
+      @media only screen and (max-width: 62.5em) {
+        .card__photo--image {
+          width: 100%; } }
   .card__content {
     display: flex;
     flex-direction: column;
@@ -194,7 +227,9 @@ body {
       color: var(--color-gray-dark-2);
       margin-bottom: 2rem; }
     .card__content__stack {
-      font-family: "Roboto";
+      display: flex;
+      align-content: center;
+      flex-wrap: wrap;
       font-size: 1.4rem;
       font-weight: 400;
       color: var(--color-gray-dark-3); }
@@ -227,17 +262,29 @@ body {
   display: flex;
   align-items: flex-end;
   background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark)), url(../img/background.jpg); }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      height: 40rem; } }
 
 .footer {
   margin-top: 12rem;
   width: 100%;
   justify-content: flex-start;
   background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark)), url(../img/footer.jpg); }
+  @media only screen and (max-width: 62.5em) {
+    .footer {
+      margin-top: 4rem; } }
   .footer__content {
     padding-top: 7rem;
     display: flex;
     flex-direction: column;
     margin: 0 20% 0 20%; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__content {
+        margin: 0 10% 0 10%; } }
+    @media only screen and (max-width: 26.875em) {
+      .footer__content {
+        margin: 0 5% 0 5%; } }
     .footer__content--title {
       font-family: "Roboto Mono";
       color: var(--color-white);
@@ -254,6 +301,9 @@ body {
     font-weight: 400;
     color: var(--color-white);
     font-family: "Roboto Mono"; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__contact {
+        flex-direction: column; } }
     .footer__contact--list {
       display: flex;
       justify-content: space-between;
@@ -278,6 +328,11 @@ body {
     margin-left: 10rem;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__form {
+        margin-top: 4rem;
+        margin-left: 0;
+        width: 100%; } }
     .footer__form--title {
       margin-bottom: 2rem; }
     .footer__form--input, .footer__form--input-text {
@@ -317,8 +372,14 @@ body {
 
 .resume {
   padding-top: 9rem; }
+  @media only screen and (max-width: 62.5em) {
+    .resume {
+      padding-top: 3rem; } }
 
 .projects {
   padding-top: 9rem;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 62.5em) {
+    .projects {
+      padding-top: 3rem; } }

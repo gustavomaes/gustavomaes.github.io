@@ -4,16 +4,31 @@
     margin-bottom:-3.5rem;
     font-family: "Roboto Mono";
 
+    @include respond(bp-small) {
+        margin: 0 10% 0 10%;
+    }
+    
+    @include respond(bp-micro) {
+        margin: 0 5% 0 5%;
+    }
+    
     &__img {
         border-radius: .5rem;
         box-shadow: var(--shadow-light);
         max-height: 38rem;
+
+        @include respond(bp-large) {
+            display: none;
+        }
     }
 
     &__details {
         display: flex;
         flex-direction: column;
         margin-left: 7rem;
+        @include respond(bp-large) {
+            margin-left: 0rem;
+        }
     }
 
     &__name {

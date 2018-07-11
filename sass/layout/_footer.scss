@@ -8,13 +8,25 @@
     // background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark));
     background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark)), url(../img/footer.jpg);
 
+    @include respond(bp-large) {
+        margin-top: 4rem;
+    }
+
     &__content {
         padding-top: 7rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
         margin: 0 20% 0 20%;
         
 
+        @include respond(bp-small) {
+            margin: 0 10% 0 10%;
+        }
+
+        @include respond(bp-micro) {
+            margin: 0 5% 0 5%;
+        }
+        
         &--title {
             font-family: "Roboto Mono";
             color: var(--color-white);
@@ -30,12 +42,16 @@
     }
 
     &__contact {
-        display: flex;        
+        display: flex;
         padding-top: 5rem;
         font-size: 1.6rem;
         font-weight: 400;
         color: var(--color-white);
         font-family: "Roboto Mono";
+
+        @include respond(bp-medium) {
+            flex-direction: column;
+        }
 
         &--list {
             display: flex;
@@ -76,6 +92,13 @@
         margin-left: 10rem;
         display: flex;
         flex-direction: column;
+
+        @include respond(bp-medium) {
+            margin-top: 4rem;
+            margin-left: 0;
+            width: 100%;
+        }
+
 
         &--title {
             margin-bottom: 2rem;

@@ -1,3 +1,11 @@
 .content {
     margin: 0 20% 0 20%;
+
+    @include respond(bp-small) {
+        margin: 0 10% 0 10%;
+    }
+
+    @include respond(bp-micro) {
+        margin: 0 5% 0 5%;
+    }
 }

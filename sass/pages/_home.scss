@@ -1,5 +1,9 @@
 .resume {
     padding-top: 9rem;
+
+    @include respond(bp-large) {
+        padding-top: 3rem;
+    }
 }
 
 .projects {
@@ -7,4 +11,8 @@
 
     display: flex;
     flex-direction: column;
+
+    @include respond(bp-large) {
+        padding-top: 3rem;
+    }
 }
