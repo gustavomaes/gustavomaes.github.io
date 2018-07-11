@@ -32,7 +32,7 @@
                     </div>
                     <div class="profile-box__contact">
                         <dd class="profile-box__contact--dd">email:</dd>
-                        <dt class="profile-box__contact--dt">gustavomaescd@gmail.com</dt>
+                        <dt class="profile-box__contact--dt"> <a href="mailto:gustavomaescd@gmail.com?Subject=Contact%20email">gustavomaescd@gmail.com</a> </dt>
                     </div>
                     <div class="profile-box__contact">
                         <dd class="profile-box__contact--dd">adress:</dd>
@@ -40,12 +40,16 @@
                     </div>
 
                     <div class="icon-box">
-                        <svg class="icon-box__icon">
-                            <use xLink:href="img/sprite.svg#icon-github"></use>
-                        </svg>
-                        <svg class="icon-box__icon">
-                            <use xLink:href="img/sprite.svg#icon-linkedin-square"></use>
-                        </svg>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/gustavomaes">
+                            <svg class="icon-box__icon" >
+                                <use xLink:href="img/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/">
+                            <svg class="icon-box__icon">
+                                <use xLink:href="img/sprite.svg#icon-linkedin-square"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -169,7 +173,7 @@
             <div class="footer__content">
                 <p class="footer__content--title">Contact</p>
                 <div class="footer__contact">
-                    
+
                     <div class="footer__contact__box">
                         <div class="footer__contact--list">
                             <dd class="footer__contact--dd">Phone:</dd>
@@ -178,23 +182,23 @@
 
                         <div class="footer__contact--list">
                             <dd class="footer__contact--dd">Skype:</dd>
-                            <dt class="footer__contact--dt">gustavomaescd</dt>
+                            <dt class="footer__contact--dt"> <a href="skype:live:gustavomaescd">gustavomaescd</a></dt>
                         </div>
 
                         <div class="footer__contact--list">
                             <dd class="footer__contact--dd">E-mail:</dd>
-                            <dt class="footer__contact--dt">gustavomaescd@gmail.com</dt>
+                            <dt class="footer__contact--dt"><a href="mailto:gustavomaescd@gmail.com?Subject=Contact%20email">gustavomaescd@gmail.com</a></dt>
                         </div>
                     </div>
 
 
-                    <div class="footer__form">
-                        <p class="footer__form--title">Or just write me a e-mail here_</p>
-                        <input class="footer__form--input" type="text" placeholder="Your name">
-                        <input class="footer__form--input" type="email" placeholder="Your e-mail">
-                        <textarea rows="4" cols="50" class="footer__form--input-text" placeholder="Type the message here"></textarea>
-                        <button class="footer__form--btn">Send</button>
-                    </div>
+                    <form action="https://mailthis.to/gustavomaes" method="POST" encType="multipart/form-data" class="footer__form">
+                            <p class="footer__form--title">Or just write me a e-mail here_</p>
+                            <input class="footer__form--input" name="name" type="text" placeholder="Your name">
+                            <input class="footer__form--input" name="email" type="email" placeholder="Your e-mail">
+                            <textarea rows="4" cols="50" class="footer__form--input-text" name="message" placeholder="Type the message here"></textarea>
+                            <button type="submit" value="Submit Form" class="footer__form--btn">Send</button>
+                    </form>
                 </div>
 
                 <p class="footer__content--copyright">&copy; Gustavo Maes. All Rights Reserved</p>

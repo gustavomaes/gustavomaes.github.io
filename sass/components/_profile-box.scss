@@ -55,6 +55,15 @@
         &--dt {
             margin-left: auto;
             width: 66%;
+
+            a {
+                text-decoration: none;
+                color: var(--color-gray-light-1);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
