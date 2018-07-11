@@ -1,0 +1,129 @@
+.footer {
+    margin-top: 12rem;
+
+    width: 100%;
+    justify-content: flex-start;
+    
+
+    // background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark));
+    background-image: linear-gradient(to right, var(--alpha-primary-light), var(--alpha-primary-dark)), url(../img/footer.jpg);
+
+    &__content {
+        padding-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 20% 0 20%;
+        
+
+        &--title {
+            font-family: "Roboto Mono";
+            color: var(--color-white);
+            font-size: 3.6rem;
+        }
+
+        &--copyright {
+            font-size: 1.6rem;
+            color: var(--color-gray-light-4);
+            margin: 4rem 0;
+            align-self: center;
+        }
+    }
+
+    &__contact {
+        display: flex;        
+        padding-top: 5rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var(--color-white);
+        font-family: "Roboto Mono";
+
+        &--list {
+            display: flex;
+            justify-content: space-between;
+            width: 35rem;
+            &:not(:last-child) {
+                margin-bottom: 1.3rem;
+            }
+        }
+
+        &--dd {
+            text-transform: uppercase;
+            color: var(--color-white);
+            width: 33%;
+            // margin-right: 2rem;
+            font-weight: 700;
+        }
+
+        &--dt {
+            margin-left: auto;
+            width: 66%;
+        }
+
+    }
+
+
+    &__form {
+        width: 40%;
+        margin-left: 10rem;
+        display: flex;
+        flex-direction: column;
+
+        &--title {
+            margin-bottom: 2rem;
+        }
+
+        &--input,
+        &--input-text {
+            font-size: 1.5rem;
+            
+            border: .1rem solid var(--color-white);
+            border-radius: .5rem;
+            font-family: inherit;
+            color: var(--color-white);
+            margin-bottom: 2rem;
+            padding: 1.5rem 2rem;
+            background-color: transparent;
+
+            &::-webkit-input-placeholder {
+                color: var(--color-white);
+            }
+
+            &:focus {
+                outline: none;
+            }
+    
+        }
+
+        &--input-text {
+            resize: none;            
+            height: 10rem;
+            
+     
+        }
+
+        &--btn {
+            font-family: inherit;
+
+            font-size: 1.5rem;
+            border: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 100px;
+            background-color:  var(--color-primary);
+            color: #fff;
+            overflow: hidden;
+            padding: 1.5rem 0;
+            box-shadow: 0 .1rem 2.9rem rgba(0,0,0,.16);
+            cursor: pointer;
+
+            & > * {
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+        
+                transition: all .2s;
+        
+            }
+        }
+    }
+}
