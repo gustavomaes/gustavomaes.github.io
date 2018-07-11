@@ -38,8 +38,4 @@ html {
     @include respond(bp-largest) {
         font-size: 50%; //1rem = 8px
     }
-
-    @include respond(bp-micro) {
-        font-size: 37.5%; //1rem = 6px
-    }
 }

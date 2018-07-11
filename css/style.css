@@ -30,9 +30,6 @@ html {
   @media only screen and (max-width: 78.125em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 26.875em) {
-    html {
-      font-size: 37.5%; } }
 
 body {
   font-family: "Roboto", sans-serif;
