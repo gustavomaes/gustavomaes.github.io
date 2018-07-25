@@ -238,7 +238,7 @@ body {
         .card__content__stack--item:not(:last-child) {
           margin-right: 1rem; }
     .card__content__link {
-      padding-top: 3rem;
+      padding-top: 1rem;
       text-decoration: none;
       font-family: "Roboto mono";
       font-size: 1.4rem;
